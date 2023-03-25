@@ -26,9 +26,7 @@ Q,Z - 10 очков;
 """
 
 
-def sum_score(*args):
-    alphabet = args[0]
-    word_upp = args[1]
+def sum_score(alphabet, word_upp):
     list_keys = list(alphabet.keys())
     score_char = 0
     for char_word in word_upp:
@@ -54,6 +52,6 @@ language = int(input("Выберите язык -> введите 1 (русск�
                      "или любое другое число (английский): "))
 word = input("Введите слово: ").upper()
 if language == 1:
-    print(sum_score(*[alphabet_rus, word]))
+    print(sum_score(alphabet_rus, word))
 else:
-    print(sum_score(*[alphabet_eng, word]))
+    print(sum_score(alphabet_eng, word))

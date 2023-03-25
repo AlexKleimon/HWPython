@@ -19,9 +19,7 @@ def print_array(lst_numbers):
         print(i, end=' ')
 
 
-def search_number(*args):
-    lst_numbers = args[0]
-    num_x = args[1]
+def search_number(lst_numbers, num_x):
     min_diff_numbers = abs(num_x - lst_numbers[0])
     index = 0
     index_2 = -1
