@@ -15,8 +15,8 @@ list_2 = [int(el) for el in
 set_1 = set(list_1)
 set_2 = set(list_2)
 set_3 = set_1.intersection(set_2)
-lst = list(set_3)
-lst.sort()
+lst_sort = list(set_3)
+lst_sort.sort()
 print("Пересекающиеся числа двух множествах по возрастанию:", end=' ')
-for el in lst:
+for el in lst_sort:
     print(el, end=' ')
