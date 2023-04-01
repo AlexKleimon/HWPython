@@ -9,6 +9,6 @@ first_el = int(input("Введите первый элемент арифмет�
 diff_el = int(input("Введите шаг (разность) арифметической прогрессии: "))
 size_list = int(input("Введите количество элементов массива: "))
 arith_progres = list()
-for index in range(0, size_list + 1):
+for index in range(0, size_list):
     arith_progres.append(first_el + index * diff_el)
 print(arith_progres)
