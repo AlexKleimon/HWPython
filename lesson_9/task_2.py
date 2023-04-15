@@ -10,9 +10,7 @@ class Singleton(type):
     def __call__(cls):
         if cls.inst_cls is None:
             cls.inst_cls = super().__call__()
-            return cls.inst_cls
-        else:
-            return cls.inst_cls
+        return cls.inst_cls
 
 
 class TestSingleton(metaclass=Singleton):
